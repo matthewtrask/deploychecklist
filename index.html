@@ -22,7 +22,15 @@
 
     <div class="container">
       <section id="main_content">
-        
+        <h3>Pre Deploy</h3>
+        <p>Prior to deployment, what you should be looking for:</p>
+        <ul>
+          <li>All PR's have been squashed to a single commit</li>
+          <li>Code has been reviewed by various team mates</li>
+          <li>Code was committed with tests to ensure the quality of code</li>
+          <li>Continious Integration has run <em>and</em> passed. (Travis, CircleCI, CodeShip, Jenkins)</li>
+          <li>PR has noted any changes to the database, migrations that need to be run, or places in the code base affected by the PR.</li>
+        </ul>
       </section>
     </div>
 
