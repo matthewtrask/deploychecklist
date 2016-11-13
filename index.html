@@ -23,15 +23,30 @@
     <div class="container">
       <section id="main_content">
         <p>This is aimed at helping developers new to deployment have a more successful deployment of code. Deploying can honestly be scary, and I hope this checkbox helps allievate the feeling. In this list you will find things that you might already do, things you didnt know you should do, and things to do should it go wrong. This can work if you are a team of two, or a team of 20, as long as you follow this list.</p>
+        <p>Somethings that are not on the list, yet need to be addressed is:<p>
+        <ul>
+          <li>Development and Deployment Schedule</li>
+          <li>Deployment Time and Day</li>
+          <li>Who handles the actual deployment of code?</li>
+          <li>Who to alert (CEO, CTO, Product Owner, Dev Team, Infra Team if exists), and how to annouce when a deployment is made (Hipchat, Slack, Email)</li>
+        </ul>
         
-        <h3>Pre Deploy</h3>
-        <p>Prior to deployment, what you should be looking for:</p>
+        <h3>Pre Pre Deploy</h3>
+        <p>Prior to setting up for a pre deployment, what you should be looking for:</p>
         <ul>
           <li>All PR's have been squashed to a single commit</li>
           <li>Code has been reviewed by various team mates</li>
           <li>Code was committed with tests to ensure the quality of code</li>
           <li>Continious Integration has run <em>and</em> passed. (Travis, CircleCI, CodeShip, Jenkins)</li>
           <li>PR has noted any changes to the database, migrations that need to be run, or places in the code base affected by the PR.</li>
+        </ul>
+        <hr>
+        <h3>Pre Deploy</h3>
+        <p>The next step, right before deployment, should have the following things take place:</p>
+        <ul>
+          <li>Get code on a testing server, to test new code in the complete code base</li>
+          <li>Have both developers and non developers test. Compile results into a shared document and give developers time to fix anything that may have come up.</li>
+          <li>Restage changes, and do one more test through to see that all points were addressed</li>
         </ul>
       </section>
     </div>
